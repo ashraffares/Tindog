@@ -17,16 +17,12 @@ h3 {
 }
 
 #title {
+  position: relative;
   background-color: #ff4c68;
 }
 
 .container-fluid {
-  padding: 3% 15%;
-}
-
-.rotate {
-  width: 60%;
-  transform: rotate(25deg);
+  padding: 3% 15% 7%;
 }
 
 .navbar {
@@ -52,10 +48,24 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 
+.container-img {
+  position: relative;
+}
+
+.rotate {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
+
 /* features-sections */
 
 #features {
+  position: relative;
   padding: 6% 12%;
+  background-color: #fff;
 }
 
 .icon {
@@ -102,4 +112,45 @@ h3 {
 
 #pricing {
   padding: 100px;
+}
+
+/* cta */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 6% 12%;
+  text-align: center;
+}
+
+.cta-header {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* footer */
+
+#footer {
+  padding: 6% 12%;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .rotate {
+    position: static;
+    transform: rotate(0);
+  }
 }
